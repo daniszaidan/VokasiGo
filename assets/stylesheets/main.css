@@ -1,0 +1,537 @@
+/* base colors */
+/* 
+ * #f4f4f4 
+ * #ffffff
+ * #02ccba -> button
+ * linear-gradient(160deg, #02CCBA 0%, #AA7ECD 100%)
+*/
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900');
+
+/* global styles */
+
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+
+    font: 16px/1.5em 'Lato', sans-serif;
+
+    color: #444;
+    background: #f4f4f4;
+}
+
+ul{
+    padding: 0;
+
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #444;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.bg-effect{
+    background: linear-gradient(160deg, #00CCBA, #AA7ECD);
+}
+
+.flex-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-default{
+    background: #2a81b9;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-default:hover{
+    background: #f4f4f4;
+    color: #444;
+}
+
+
+.btn-md{
+    padding: 10px 15px;
+
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.btn-sm{
+    padding: 5px;
+}
+
+.shadow{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* grid system */
+
+.col-12{
+    width: 100%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-3{
+    width: 24.999%;
+}
+
+.col-2{
+    width: 16.667%;
+}
+
+#hero {
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+select, input
+{
+    padding: 10px;
+    margin-bottom: 15px;
+
+    background: #fff;
+    border: 0;
+}
+
+input{
+    border-bottom: 1px solid rgba(102, 102, 102, .7);
+}
+
+
+
+/* Login styles */
+.account{
+    min-height: 100%;
+}
+
+.account-form{
+    width: 480px;
+    padding: 25px;
+
+    background: #fff;
+    border-radius: 5px;
+}
+
+.account-form h1{
+    display: inline-block;
+
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    
+    border-bottom: 1px solid #666;
+}
+
+.account-form form input[type="text"],
+.account-form form input[type="email"],
+.account-form form input[type="password"],
+.account-form form label,
+.account-form form select,
+.account-form form a{
+    display: block;
+}
+
+.account-form form input,
+.account-form form select
+{
+    width: 100%;    
+}
+
+
+.account-form form button{
+    margin-bottom: 15px;
+    
+}
+
+.account-form form button a{    
+    color: #fff !important;
+}
+.account-form form button a:hover{    
+    color: #444 !important;
+}
+
+.account-form form label{
+    font-size: 14px;
+}
+
+.account-form form button{
+    display: block;
+    width: 100%;
+}
+
+#forgot{
+    float: right;
+}
+
+#forgot a, #register a{
+    position: relative;
+    top: 10px;
+
+    padding-bottom: 5px;
+}
+
+#register{
+    float: left;
+}
+
+/* registration form */
+
+
+
+/* nav styles */
+nav#menu{
+    background: #f4f4f4;
+    overflow: hidden;
+    min-height: 60px;
+    position: fixed;
+    width: 100%;
+    /* top: 0; */
+    z-index: 99;
+}
+
+header{
+    position: relative;
+    min-height: 80vh;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.bg-header{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    opacity: .8;
+
+    z-index: -1;
+}
+
+header .intro{
+    float: left;
+    
+    z-index: 3;
+}
+
+header .intro .intro-title{
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    font-size: 4em;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color: #2980b9;
+
+    background: #fff;
+}
+
+header .intro p{
+    width: 80%;
+    padding-bottom: 5px;
+
+    font-size: 20px;
+    
+    border-bottom: 2px solid rgba(255,255,255, .6);
+    color: #fff;
+}
+
+
+header .intro-video{
+    float: right;
+
+    height: 100%;
+    
+    opacity: .7;
+    z-index: 2;
+}
+
+header .intro-video iframe{
+    display: block;
+    min-width: 100%;
+    margin: auto;
+    min-height: 100%;
+}
+
+
+
+/* main */
+#main{
+    min-height: 100%;
+    padding-top: 20px;  
+    padding-bottom: 100px;
+    background: #eee;
+    margin-bottom: 20px;
+}
+
+footer{
+    position: relative;
+    background: black;
+    height: 100px;
+    margin-top: -100px;
+}
+
+div#branding {
+    float: left;
+}
+
+div#navbar {
+    float: left;
+}
+
+div#navbar-right {
+    float: right;
+    margin-top: 15px;
+}
+
+#navbar-right .submit-new {
+    float: left;
+    padding-left: 10px;
+    margin-left: 10px;
+
+    border-left: 1px solid #fff;
+}
+
+#navbar-right .submit-new a{
+    display: inline-block;
+}
+
+#navbar-right div#search-bar {
+    float: left;
+    /* vertical-align: bottom; */
+}
+
+div#navbar-right .row {
+    float: right;
+}
+
+#menu #navbar li {
+    float: left;
+    margin: 0 15px;
+}
+
+#menu .row {
+    overflow: hidden;
+}
+
+#menu div#branding {
+    margin-top: 18px;
+}
+
+#menu div#navbar {
+    margin-top: 18px;
+}
+
+#menu #navbar-right #search-icon{
+    
+}
+
+#navbar-right input[type="text"] {
+    border:  0;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 5px;
+    min-width: 200px;
+    background: #ffffff;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#branding h1 {
+    font-size: 28px;
+    color: #222;
+}
+
+#branding span.highlight {
+    color: #2a81b9;
+}
+
+#menu #navbar li a {
+    color: #808080;
+}
+
+#menu #navbar li a:hover{
+    color: #111;
+}
+
+
+div#showcase {
+    padding-top: 60px;
+}
+
+
+.category select {
+    width: 200px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.category button.btn-default.btn-sm {
+    margin-left: 10px;
+    height: 35px;
+    width: 100px;
+}
+
+.category {
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    margin-bottom: 20px;
+}
+
+
+#gallery .col-4{
+    float: left;
+    overflow: hidden;
+}
+
+#gallery .col-4 .card{
+    display: block;
+    padding: 3%;
+    margin: 3%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    background: #fff;
+}
+
+#gallery .col-4 .card * {
+    color: #666;
+}
+
+#gallery .card .img-box {
+    width: 100%;
+    min-height: 180px;
+}
+
+
+#gallery .card .img-box img{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.desc-box .col-6 {
+    float: left;
+}
+
+.desc-box h4{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.desc-box small{
+    display: block;
+    text-align: right;
+}
+
+.desc-box .statistic{
+    float: right;
+}
+
+.desc-box .statistic span{
+    font-size: 12px;
+    margin-left: 7px;
+}
+
+#newsletter{
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.newsletter-box{
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.newsletter-box h2{
+    margin-bottom: 20px;
+}
+
+.newsletter-box input{
+    display: block;
+    width: 100%;
+}
+
+footer{
+    position: relative;
+    padding: 20px 0;
+    background: #f4f4f4;
+}
+
+@media(max-width:768px){
+    .col-4, .col-6{
+        width: 100%;
+    }
+}
+
+footer .col-4{
+    float: left;
+    text-align: center;
+}
+
+footer .col-4 h4{
+    margin-bottom: 20px;
+}
+
+footer .col-4 input{
+    text-align: center;
+}
+
+footer form textarea{
+    min-height: 50px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid rgba(102, 102, 102, .7);
+}
+
+footer button{
+    margin-top: 10px;
+    width: 80px;
+}
+
+footer #copyright{
+    margin-top: 15px;
+    padding: 10px 0;
+    text-align: left;
+}

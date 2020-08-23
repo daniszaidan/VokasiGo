@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: lato;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	width: 100%;
+	height: 10vh;
+	overflow: hidden;
+}
+#sidebar-nav{
+	width: 25.1%;
+	height: 100vh;
+	background: linear-gradient(160deg , #02CCBA, #AA7ECD);
+	float: left;
+	box-shadow: 4px 0px 10px 0px rgba(46,61,73,0.2);
+	position: absolute;
+	left: 0;
+	z-index: 99;
+	transition: left 0.5s;
+}
+#sidebar-nav nav{
+	width: 100%;
+	height: 100vh;
+}
+#sidebar-nav nav #dashboard-logo{
+	width: 100%;
+	height: 27%;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 10px 0px rgba(46,61,73,0.2);
+}
+#sidebar-nav nav #dashboard-logo div{
+	width: 100px;
+	height: 100px;
+	background: #9d6cc6;
+	margin: 0 auto 15px auto;
+}
+#sidebar-nav nav #dashboard-logo h1{
+	text-align: center;
+	color: white;
+}
+#sidebar-nav nav ul div{
+	margin-left: 20px;
+}
+#sidebar-nav nav ul li{
+	display: inline-block;
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+}
+#sidebar-nav nav ul li i{
+	margin-right: 20px;
+}
+#sidebar-nav nav ul li a{
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+	display: block;
+	color: white;
+	padding: 0 40px;
+}
+#sidebar-nav nav ul li a:hover{
+	background: #9d6cc6;
+}
+#dashboard-main{
+	width: 75%;
+	position: absolute;
+	right: 0;
+	height: 100vh;
+	background: #f4f4f4;
+	float: left;
+	z-index: -1;
+	transition: width 0.5s;
+}
+#dashboard-main header{
+	width: 100%;
+	height: 7vh;
+	background: linear-gradient(160deg , #02CCBA, #AA7ECD);
+}
+#dashboard-main header #menu-button{
+	width: 32px;
+	height: 32px;
+	margin: 13px 0 3px 20px;
+	float: left;
+	cursor: pointer;
+}
+#dashboard-main header #menu-button span{
+	height: 4px;
+	background: white;
+	margin-bottom: 5px;
+	display: block;
+}
+#dashboard-main header h3{
+	color: white;
+	font-weight: 400;
+	display: block;
+}
+#right-layout{
+	float: right;
+}
+#right-layout #notification{
+	width: 40px;
+	height: 40px;
+	float: right;
+	margin: 3px 20px 3px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#right-layout #notification i{
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+}
+#right-layout #visit{
+	line-height: 7vh;
+	color: white;
+	padding: 5px 20px;
+	background: #02CCBA;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#dashboard-main header h3{
+	line-height: 7vh;
+	margin: 0 20px;
+	float: left;
+}
+#dashboard-main section{
+	width: 100%;
+	height: 93vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#dashboard-main section .mainbar-home{
+	width: 90%;
+	height: 90%;
+	border-radius: 4px;
+}
+#dashboard-main section .mainbar-home #user-online{
+	width: 48%;
+	height: 30%;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 4px 4px 10px 0px rgba(46,61,73,0.2);
+	float: left;
+	margin: 0 2% 4% 0;
+	padding: 20px;
+	box-sizing: border-box;
+	position: relative;
+	color: #9d6cc6;
+}
+#dashboard-main section .mainbar-home #admin-online{
+	width: 48%;
+	height: 30%;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 4px 4px 10px 0px rgba(46,61,73,0.2);
+	float: left;
+	margin: 0 0 4% 2%;
+	padding: 20px;
+	box-sizing: border-box;
+	position: relative;
+	color: #9d6cc6;
+}
+#dashboard-main section .mainbar-home #user-online a,
+#dashboard-main section .mainbar-home #admin-online a{
+	font-size: 35px;
+	bottom: 0;
+	right: 0;
+	color: #27ae60;
+	font-weight: 800;
+	position: absolute;
+	margin: 30px;
+}
+#dashboard-main section .mainbar-home #statistik{
+	width: 100%;
+	height: 62%;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 4px 4px 10px 0px rgba(46,61,73,0.2);
+	clear: both;
+	padding: 20px;
+	box-sizing: border-box;
+	color: #9d6cc6;
+}
+#dashboard-main section .mainbar-home #account{
+	width: 100%;
+	height: 62%;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 4px 4px 10px 0px rgba(46,61,73,0.2);
+	clear: both;
+	padding: 20px;
+	box-sizing: border-box;
+	color: #9d6cc6;
+}
+#dashboard-main section .mainbar{
+	width: 90%;
+	height: 90%;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 4px 4px 10px 0px rgba(46,61,73,0.2);
+}
+#dashboard-main section .mainbar .header-news{
+	margin: 30px;
+}
+#dashboard-main section .mainbar .header-news h4{
+	font-weight: 400;
+}
+#dashboard-main section .mainbar .table-layout{
+	width: 90%;
+	height: 75%;
+	margin: 0 auto;
+	overflow: auto;
+}
+#dashboard-main section .mainbar table{
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+#dashboard-main section .mainbar .table-karya{
+	width: 1200px;
+}
+#dashboard-main section .mainbar .table-user{
+	width: 1300px;
+}
+#dashboard-main section .mainbar .table-berita{
+	width: 100%;
+}
+#dashboard-main section .mainbar table tr{
+	height: 40px;
+	border-bottom: 2px solid #eee;
+}
+#dashboard-main section .mainbar table tr td{
+	padding: 0 10px;
+}
+#dashboard-main section .mainbar table tr .update{
+	text-align: center;
+}
+#dashboard-main section .mainbar table tr td .edit{
+	color: green;
+	font-size: 15pt;
+	margin-right: 10px;
+}
+#dashboard-main section .mainbar table tr td .remove{
+	color: red;
+	font-size: 15pt;
+}
+.mainbar-home #table-account{
+	width: 100%;
+	margin-top: 20px;
+	
+	border-collapse: collapse;
+}
+.mainbar-home #table-account tr{
+	height: 25px;
+}
+.mainbar-home #table-account tr td{
+	font-size: 18px;
+	padding: 7px 0;
+	border-bottom: 2px solid #eee;
+}
+#edit-account{
+	float: right;
+	margin-top: 10px;
+	color: white;
+	padding: 5px 20px;
+	background: #02CCBA;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 780px){
+
+	#sidebar-nav{
+		left: -25.1%;
+	}
+	#dashboard-main{
+		width: 100%;
+	}
+	#dashboard-main section .mainbar-home #user-online a,
+	#dashboard-main section .mainbar-home #admin-online a{
+		font-size: 25px;
+		font-weight: 700;
+		margin: 25px;
+	}
+	#right-layout{
+		right: 0;
+		width: 50%;
+		position: fixed;
+		display: block;
+		padding-left: 10px;
+		background: linear-gradient(160deg , #02CCBA, #AA7ECD);
+	}
+	#right-layout #visit{
+		line-height: 7vh;
+		color: white;
+		background: #02CCBA;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+
+}

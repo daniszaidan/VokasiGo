@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VokasiGO! | Registrasi</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+<body>
+    <div class="account bg-effect flex-content">
+        <div class="account-form shadow">
+            <h1>Getting Started</h1>
+            <form action="user.html" method="POST">
+                <div class="element-form">
+                    <input name="name" type="text" placeholder="Full Name" required>
+                </div>
+                <div class="element-form">
+                    <input name="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="element-form">
+                    <input name="username" type="text" placeholder="Username" required>
+                </div>
+                <div class="element-form">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="element-form">
+                    <label for="university">Choose University</label>
+                    <select id="university" name="university" required>
+                        <option value="tel-u">Telkom University</option>
+                        <option value="ugm">Universitas Gadjah Mada</option>
+                        <option value="ui">Universitas Indonesia</option>
+                        <option value="ipb">Institut Pertanian Bogor</option>
+                    </select>
+                </div>
+
+                <button class="btn-default btn-md shadow" type="submit">Daftar</button>
+            </form>
+            
+            <div id="forgot">
+                <a href="login.html">Already have an account?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
